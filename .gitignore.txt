@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Datos grandes (el CSV original de Kaggle pesa 144MB)
+Data/creditcard.csv
+Data/prep_outputs/*.csv
+
+# Modelos serializados (los PKLs pesan varios MB)
+Data/model_outputs/*.pkl
+Data/improvement_outputs/*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,459 @@
+{
+  "dataset": {
+    "test_rows": 56746,
+    "test_frauds": 95,
+    "test_prev_pct": 0.167,
+    "coste_fn_eur": 500,
+    "coste_fp_eur": 10
+  },
+  "optimal_thresholds": {
+    "Random Forest (bal)": {
+      "f1": 0.64,
+      "recall": 0.13,
+      "cost": 0.14
+    },
+    "Gradient Boosting (SMOTE)": {
+      "f1": 0.97,
+      "recall": 0.81,
+      "cost": 0.9
+    },
+    "MLP (SMOTE)": {
+      "f1": 0.99,
+      "recall": 0.57,
+      "cost": 0.53
+    }
+  },
+  "eval_results": {
+    "Random Forest (bal)": {
+      "default": {
+        "label": "Umbral 0.50 (Fase 4)",
+        "threshold": 0.5,
+        "roc_auc": 0.954,
+        "ap": 0.7958,
+        "f1": 0.814,
+        "precision": 0.9091,
+        "recall": 0.7368,
+        "tn": 56644,
+        "fp": 7,
+        "fn": 25,
+        "tp": 70,
+        "cost": 12570,
+        "fraudes_detectados": 70,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 7
+      },
+      "optimal_f1": {
+        "label": "Umbral optimo F1 (0.64)",
+        "threshold": 0.64,
+        "roc_auc": 0.954,
+        "ap": 0.7958,
+        "f1": 0.8072,
+        "precision": 0.9437,
+        "recall": 0.7053,
+        "tn": 56647,
+        "fp": 4,
+        "fn": 28,
+        "tp": 67,
+        "cost": 14040,
+        "fraudes_detectados": 67,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 4
+      },
+      "optimal_recall": {
+        "label": "Umbral optimo Recall (0.13)",
+        "threshold": 0.13,
+        "roc_auc": 0.954,
+        "ap": 0.7958,
+        "f1": 0.6473,
+        "precision": 0.5342,
+        "recall": 0.8211,
+        "tn": 56583,
+        "fp": 68,
+        "fn": 17,
+        "tp": 78,
+        "cost": 9180,
+        "fraudes_detectados": 78,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 68
+      },
+      "optimal_cost": {
+        "label": "Umbral min-Coste (0.14)",
+        "threshold": 0.14,
+        "roc_auc": 0.954,
+        "ap": 0.7958,
+        "f1": 0.6695,
+        "precision": 0.5652,
+        "recall": 0.8211,
+        "tn": 56591,
+        "fp": 60,
+        "fn": 17,
+        "tp": 78,
+        "cost": 9100,
+        "fraudes_detectados": 78,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 60
+      }
+    },
+    "Gradient Boosting (SMOTE)": {
+      "default": {
+        "label": "Umbral 0.50 (Fase 4)",
+        "threshold": 0.5,
+        "roc_auc": 0.9704,
+        "ap": 0.7549,
+        "f1": 0.2998,
+        "precision": 0.1829,
+        "recall": 0.8316,
+        "tn": 56298,
+        "fp": 353,
+        "fn": 16,
+        "tp": 79,
+        "cost": 11530,
+        "fraudes_detectados": 79,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 353
+      },
+      "optimal_f1": {
+        "label": "Umbral optimo F1 (0.97)",
+        "threshold": 0.97,
+        "roc_auc": 0.9704,
+        "ap": 0.7549,
+        "f1": 0.7841,
+        "precision": 0.8519,
+        "recall": 0.7263,
+        "tn": 56639,
+        "fp": 12,
+        "fn": 26,
+        "tp": 69,
+        "cost": 13120,
+        "fraudes_detectados": 69,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 12
+      },
+      "optimal_recall": {
+        "label": "Umbral optimo Recall (0.81)",
+        "threshold": 0.81,
+        "roc_auc": 0.9704,
+        "ap": 0.7549,
+        "f1": 0.6215,
+        "precision": 0.5,
+        "recall": 0.8211,
+        "tn": 56573,
+        "fp": 78,
+        "fn": 17,
+        "tp": 78,
+        "cost": 9280,
+        "fraudes_detectados": 78,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 78
+      },
+      "optimal_cost": {
+        "label": "Umbral min-Coste (0.9)",
+        "threshold": 0.9,
+        "roc_auc": 0.9704,
+        "ap": 0.7549,
+        "f1": 0.7308,
+        "precision": 0.6726,
+        "recall": 0.8,
+        "tn": 56614,
+        "fp": 37,
+        "fn": 19,
+        "tp": 76,
+        "cost": 9870,
+        "fraudes_detectados": 76,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 37
+      }
+    },
+    "MLP (SMOTE)": {
+      "default": {
+        "label": "Umbral 0.50 (Fase 4)",
+        "threshold": 0.5,
+        "roc_auc": 0.9511,
+        "ap": 0.7897,
+        "f1": 0.5811,
+        "precision": 0.4529,
+        "recall": 0.8105,
+        "tn": 56558,
+        "fp": 93,
+        "fn": 18,
+        "tp": 77,
+        "cost": 9930,
+        "fraudes_detectados": 77,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 93
+      },
+      "optimal_f1": {
+        "label": "Umbral optimo F1 (0.99)",
+        "threshold": 0.99,
+        "roc_auc": 0.9511,
+        "ap": 0.7897,
+        "f1": 0.7912,
+        "precision": 0.8276,
+        "recall": 0.7579,
+        "tn": 56636,
+        "fp": 15,
+        "fn": 23,
+        "tp": 72,
+        "cost": 11650,
+        "fraudes_detectados": 72,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 15
+      },
+      "optimal_recall": {
+        "label": "Umbral optimo Recall (0.57)",
+        "threshold": 0.57,
+        "roc_auc": 0.9511,
+        "ap": 0.7897,
+        "f1": 0.6087,
+        "precision": 0.4873,
+        "recall": 0.8105,
+        "tn": 56570,
+        "fp": 81,
+        "fn": 18,
+        "tp": 77,
+        "cost": 9810,
+        "fraudes_detectados": 77,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 81
+      },
+      "optimal_cost": {
+        "label": "Umbral min-Coste (0.53)",
+        "threshold": 0.53,
+        "roc_auc": 0.9511,
+        "ap": 0.7897,
+        "f1": 0.5923,
+        "precision": 0.4667,
+        "recall": 0.8105,
+        "tn": 56563,
+        "fp": 88,
+        "fn": 18,
+        "tp": 77,
+        "cost": 9880,
+        "fraudes_detectados": 77,
+        "fraudes_totales": 95,
+        "falsas_alarmas": 88
+      }
+    }
+  },
+  "comparison_table": [
+    {
+      "model": "Random Forest (bal)",
+      "default_f1": 0.814,
+      "default_recall": 0.7368,
+      "default_precision": 0.9091,
+      "default_cost": 12570,
+      "default_tp": 70,
+      "optimal_threshold": 0.64,
+      "optimal_f1": 0.8072,
+      "optimal_recall": 0.7053,
+      "optimal_precision": 0.9437,
+      "optimal_cost": 14040,
+      "optimal_tp": 67,
+      "f1_improvement": -0.0068,
+      "recall_improvement": -0.0315,
+      "cost_reduction": -1470,
+      "brier_score": 0.0006
+    },
+    {
+      "model": "Gradient Boosting (SMOTE)",
+      "default_f1": 0.2998,
+      "default_recall": 0.8316,
+      "default_precision": 0.1829,
+      "default_cost": 11530,
+      "default_tp": 79,
+      "optimal_threshold": 0.97,
+      "optimal_f1": 0.7841,
+      "optimal_recall": 0.7263,
+      "optimal_precision": 0.8519,
+      "optimal_cost": 13120,
+      "optimal_tp": 69,
+      "f1_improvement": 0.4843,
+      "recall_improvement": -0.1053,
+      "cost_reduction": -1590,
+      "brier_score": 0.0056
+    },
+    {
+      "model": "MLP (SMOTE)",
+      "default_f1": 0.5811,
+      "default_recall": 0.8105,
+      "default_precision": 0.4529,
+      "default_cost": 9930,
+      "default_tp": 77,
+      "optimal_threshold": 0.99,
+      "optimal_f1": 0.7912,
+      "optimal_recall": 0.7579,
+      "optimal_precision": 0.8276,
+      "optimal_cost": 11650,
+      "optimal_tp": 72,
+      "f1_improvement": 0.2101,
+      "recall_improvement": -0.0526,
+      "cost_reduction": -1720,
+      "brier_score": 0.0016
+    }
+  ],
+  "error_analysis": {
+    "best_model": "Random Forest (bal)",
+    "best_threshold": 0.64,
+    "fn_stats": {
+      "count": 28,
+      "score_mean": 0.1582,
+      "score_max": 0.5787,
+      "score_min": 0.0,
+      "score_median": 0.0562,
+      "pct_below_01": 60.7,
+      "pct_below_03": 71.4
+    },
+    "fp_stats": {
+      "count": 4,
+      "score_mean": 0.8848,
+      "score_min": 0.7928,
+      "score_max": 0.9946,
+      "score_median": 0.8759
+    },
+    "fn_feature_analysis": {
+      "top_discriminant_features": [
+        {
+          "feature": "V17",
+          "fn_mean": 0.4322,
+          "tp_mean": -9.4641,
+          "abs_diff": 9.8963
+        },
+        {
+          "feature": "V14",
+          "fn_mean": -1.7976,
+          "tp_mean": -8.552,
+          "abs_diff": 6.7544
+        },
+        {
+          "feature": "V10",
+          "fn_mean": -0.3396,
+          "tp_mean": -6.9098,
+          "abs_diff": 6.5702
+        },
+        {
+          "feature": "V12",
+          "fn_mean": -1.3261,
+          "tp_mean": -7.6345,
+          "abs_diff": 6.3083
+        },
+        {
+          "feature": "V7",
+          "fn_mean": -0.3564,
+          "tp_mean": -5.721,
+          "abs_diff": 5.3646
+        },
+        {
+          "feature": "V16",
+          "fn_mean": -0.2186,
+          "tp_mean": -5.3451,
+          "abs_diff": 5.1264
+        },
+        {
+          "feature": "V8",
+          "fn_mean": -1.607,
+          "tp_mean": 2.6127,
+          "abs_diff": 4.2197
+        },
+        {
+          "feature": "V3",
+          "fn_mean": -0.536,
+          "tp_mean": -4.1893,
+          "abs_diff": 3.6533
+        },
+        {
+          "feature": "V5",
+          "fn_mean": 0.5504,
+          "tp_mean": -2.9598,
+          "abs_diff": 3.5102
+        },
+        {
+          "feature": "V18",
+          "fn_mean": 0.2291,
+          "tp_mean": -2.9451,
+          "abs_diff": 3.1741
+        }
+      ]
+    }
+  },
+  "calibration": {
+    "Random Forest (bal)": {
+      "brier_score": 0.0006,
+      "fraction_pos": [
+        0.0003,
+        0.0222,
+        0.0769,
+        0.4444,
+        0.1429,
+        0.5,
+        0.8,
+        0.9333,
+        0.9608
+      ],
+      "mean_pred": [
+        0.0027,
+        0.1325,
+        0.2333,
+        0.3405,
+        0.44,
+        0.5597,
+        0.7666,
+        0.8614,
+        0.9742
+      ]
+    },
+    "Gradient Boosting (SMOTE)": {
+      "brier_score": 0.0056,
+      "fraction_pos": [
+        0.0002,
+        0.0024,
+        0.0024,
+        0.0038,
+        0.0,
+        0.0086,
+        0.0,
+        0.0,
+        0.0435,
+        0.6726
+      ],
+      "mean_pred": [
+        0.0097,
+        0.1403,
+        0.2455,
+        0.3459,
+        0.4484,
+        0.5436,
+        0.6454,
+        0.7511,
+        0.8458,
+        0.9772
+      ]
+    },
+    "MLP (SMOTE)": {
+      "brier_score": 0.0016,
+      "fraction_pos": [
+        0.0003,
+        0.013,
+        0.0,
+        0.0606,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6814
+      ],
+      "mean_pred": [
+        0.0003,
+        0.1462,
+        0.2439,
+        0.3442,
+        0.4575,
+        0.5465,
+        0.6577,
+        0.746,
+        0.8472,
+        0.9904
+      ]
+    }
+  }
+}

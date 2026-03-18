@@ -1,0 +1,333 @@
+{
+  "dev_results": {
+    "LR_base": {
+      "name": "LR Original",
+      "roc_auc": 0.9733,
+      "f1": 0.7738,
+      "precision": 0.8784,
+      "recall": 0.6915,
+      "ap": 0.7998,
+      "cm": [
+        [
+          56642,
+          9
+        ],
+        [
+          29,
+          65
+        ]
+      ]
+    },
+    "LR_smote": {
+      "name": "LR + SMOTE",
+      "roc_auc": 0.9776,
+      "f1": 0.1034,
+      "precision": 0.0548,
+      "recall": 0.9149,
+      "ap": 0.7915,
+      "cm": [
+        [
+          55167,
+          1484
+        ],
+        [
+          8,
+          86
+        ]
+      ]
+    },
+    "LR_bal": {
+      "name": "LR + class_weight",
+      "roc_auc": 0.9816,
+      "f1": 0.1027,
+      "precision": 0.0544,
+      "recall": 0.9149,
+      "ap": 0.7882,
+      "cm": [
+        [
+          55157,
+          1494
+        ],
+        [
+          8,
+          86
+        ]
+      ]
+    },
+    "DT_bal": {
+      "name": "Decision Tree (bal)",
+      "roc_auc": 0.9134,
+      "f1": 0.2091,
+      "precision": 0.1196,
+      "recall": 0.8298,
+      "ap": 0.4767,
+      "cm": [
+        [
+          56077,
+          574
+        ],
+        [
+          16,
+          78
+        ]
+      ]
+    },
+    "DT_smote": {
+      "name": "Decision Tree + SMOTE",
+      "roc_auc": 0.9362,
+      "f1": 0.0883,
+      "precision": 0.0465,
+      "recall": 0.8723,
+      "ap": 0.3958,
+      "cm": [
+        [
+          54969,
+          1682
+        ],
+        [
+          12,
+          82
+        ]
+      ]
+    },
+    "RF_bal": {
+      "name": "Random Forest (bal)",
+      "roc_auc": 0.9728,
+      "f1": 0.8602,
+      "precision": 0.8696,
+      "recall": 0.8511,
+      "ap": 0.863,
+      "cm": [
+        [
+          56639,
+          12
+        ],
+        [
+          14,
+          80
+        ]
+      ]
+    },
+    "RF_smote": {
+      "name": "Random Forest + SMOTE",
+      "roc_auc": 0.9719,
+      "f1": 0.7535,
+      "precision": 0.6694,
+      "recall": 0.8617,
+      "ap": 0.8636,
+      "cm": [
+        [
+          56611,
+          40
+        ],
+        [
+          13,
+          81
+        ]
+      ]
+    },
+    "GB_smote": {
+      "name": "Gradient Boosting + SMOTE",
+      "roc_auc": 0.9719,
+      "f1": 0.3206,
+      "precision": 0.1953,
+      "recall": 0.8936,
+      "ap": 0.8229,
+      "cm": [
+        [
+          56305,
+          346
+        ],
+        [
+          10,
+          84
+        ]
+      ]
+    },
+    "GB_bal": {
+      "name": "Gradient Boosting (orig)",
+      "roc_auc": 0.8011,
+      "f1": 0.7314,
+      "precision": 0.7901,
+      "recall": 0.6809,
+      "ap": 0.5729,
+      "cm": [
+        [
+          56634,
+          17
+        ],
+        [
+          30,
+          64
+        ]
+      ]
+    },
+    "MLP_smote": {
+      "name": "MLP Neural Net + SMOTE",
+      "roc_auc": 0.9774,
+      "f1": 0.6217,
+      "precision": 0.4798,
+      "recall": 0.883,
+      "ap": 0.8257,
+      "cm": [
+        [
+          56561,
+          90
+        ],
+        [
+          11,
+          83
+        ]
+      ]
+    },
+    "MLP_bal": {
+      "name": "MLP Neural Net (orig)",
+      "roc_auc": 0.9806,
+      "f1": 0.8701,
+      "precision": 0.9277,
+      "recall": 0.8191,
+      "ap": 0.87,
+      "cm": [
+        [
+          56645,
+          6
+        ],
+        [
+          17,
+          77
+        ]
+      ]
+    }
+  },
+  "cv_results": {
+    "Random Forest (bal)": {
+      "roc_auc_mean": 0.9781,
+      "roc_auc_std": 0.0117,
+      "f1_mean": 0.8187,
+      "f1_std": 0.0445,
+      "precision_mean": 0.8662,
+      "recall_mean": 0.7778
+    },
+    "Gradient Boosting + SMOTE": {
+      "roc_auc_mean": 0.9988,
+      "roc_auc_std": 0.0002,
+      "f1_mean": 0.983,
+      "f1_std": 0.0013,
+      "precision_mean": 0.9873,
+      "recall_mean": 0.9787
+    },
+    "MLP + SMOTE": {
+      "roc_auc_mean": 0.9997,
+      "roc_auc_std": 0.0001,
+      "f1_mean": 0.9989,
+      "f1_std": 0.0005,
+      "precision_mean": 0.9979,
+      "recall_mean": 1.0
+    }
+  },
+  "test_results": {
+    "RF_bal": {
+      "name": "Random Forest (bal)",
+      "roc_auc": 0.954,
+      "f1": 0.814,
+      "precision": 0.9091,
+      "recall": 0.7368,
+      "ap": 0.7958,
+      "cm": [
+        [
+          56644,
+          7
+        ],
+        [
+          25,
+          70
+        ]
+      ]
+    },
+    "GB_smote": {
+      "name": "Gradient Boosting + SMOTE",
+      "roc_auc": 0.9704,
+      "f1": 0.2998,
+      "precision": 0.1829,
+      "recall": 0.8316,
+      "ap": 0.7549,
+      "cm": [
+        [
+          56298,
+          353
+        ],
+        [
+          16,
+          79
+        ]
+      ]
+    },
+    "MLP_smote": {
+      "name": "MLP + SMOTE",
+      "roc_auc": 0.9511,
+      "f1": 0.5811,
+      "precision": 0.4529,
+      "recall": 0.8105,
+      "ap": 0.7897,
+      "cm": [
+        [
+          56558,
+          93
+        ],
+        [
+          18,
+          77
+        ]
+      ]
+    },
+    "LR_bal": {
+      "name": "Logistic Regression (bal)",
+      "roc_auc": 0.9658,
+      "f1": 0.0941,
+      "precision": 0.0497,
+      "recall": 0.8737,
+      "ap": 0.6892,
+      "cm": [
+        [
+          55065,
+          1586
+        ],
+        [
+          12,
+          83
+        ]
+      ]
+    },
+    "DT_bal": {
+      "name": "Decision Tree (bal)",
+      "roc_auc": 0.8986,
+      "f1": 0.2117,
+      "precision": 0.122,
+      "recall": 0.8,
+      "ap": 0.5627,
+      "cm": [
+        [
+          56104,
+          547
+        ],
+        [
+          19,
+          76
+        ]
+      ]
+    }
+  },
+  "feature_importance_top10": {
+    "V14": 0.1936,
+    "V10": 0.1444,
+    "V4": 0.1167,
+    "V12": 0.093,
+    "V17": 0.0614,
+    "V3": 0.0564,
+    "V11": 0.0492,
+    "V16": 0.0463,
+    "V7": 0.0302,
+    "V21": 0.0212
+  },
+  "best_model": "RF_bal"
+}

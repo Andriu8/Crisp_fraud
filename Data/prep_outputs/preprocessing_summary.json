@@ -1,0 +1,89 @@
+{
+  "dataset_original": {
+    "n_rows": 283726,
+    "n_fraud": 473,
+    "fraud_pct": 0.1667101358352777,
+    "amount_mean": 88.47268731099723,
+    "amount_std": 250.39943711577337,
+    "amount_max": 25691.16,
+    "n_nulls": 0,
+    "n_duplicates": 1081,
+    "n_outliers_amount": 18802
+  },
+  "features_finales": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount_log",
+    "Hour_sin",
+    "Hour_cos",
+    "Is_Night",
+    "Amount_zscore"
+  ],
+  "nuevas_features": [
+    "Amount_log",
+    "Hour_sin",
+    "Hour_cos",
+    "Is_Night",
+    "Amount_zscore"
+  ],
+  "features_eliminadas": [
+    "Time",
+    "Amount",
+    "Hour"
+  ],
+  "particion": {
+    "train": {
+      "rows": 170235,
+      "fraud": 284
+    },
+    "dev": {
+      "rows": 56745,
+      "fraud": 94
+    },
+    "test": {
+      "rows": 56746,
+      "fraud": 95
+    }
+  },
+  "scaler": "RobustScaler",
+  "balanceo": {
+    "original_train": {
+      "0": 169951,
+      "1": 284
+    },
+    "after_smote": {
+      "0": 169951,
+      "1": 169951
+    },
+    "after_undersample": {
+      "1": 284,
+      "0": 284
+    }
+  }
+}
