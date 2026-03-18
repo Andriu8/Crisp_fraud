@@ -1,0 +1,28 @@
+# ============================================================
+# CRISP-DM — Detección Automática de Transacciones Fraudulentas
+# requirements.txt
+#
+# Instalar con:
+#   pip install -r requirements.txt
+#
+# Para el Paso 6 de improvement.py (XGBoost), añadir:
+#   pip install xgboost>=1.7.0
+# ============================================================
+
+# Manipulación de datos
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+imbalanced-learn>=0.10.0
+
+# XGBoost (opcional — Paso 6 de improvement.py)
+xgboost>=1.7.0
+
+# Visualización
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Serialización de modelos
+joblib>=1.2.0
